@@ -13,7 +13,73 @@
 
 #home { background-color: #0a0614; color: #FFF; }
 #produtos { background-color: #150a2e; color: #FFF; }
+#destaques { background-color: #0a0614; color: #FFF; }
 
+/* ===== Cabeçalho ===== */
+.header {
+    background-color: #0a0614;
+    border-bottom: 1px solid #2a1a4f;
+}
+
+.header-inner {
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    color: #ff2bd6;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #c9bfe6;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #FFF;
+}
+
+.carrinho {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid #2a1a4f;
+    border-radius: 30px;
+    padding: 8px 16px;
+}
+
+.carrinho span {
+    background: #ff2bd6;
+    border-radius: 50%;
+    padding: 2px 7px;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    color: #FFF;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* ===== Botões ===== */
 .botao {
     font-size: 15px;
     font-weight: 700;
@@ -22,6 +88,7 @@
     border-radius: 30px;
     padding: 20px 0;
     width: 190px;
+    display: inline-block;
 }
 
 .botao-verde {
@@ -40,6 +107,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 40px;
 }
 
 .home-texto {
@@ -55,6 +123,7 @@
 h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    line-height: 1.15;
 }
 
 .home-texto p {
@@ -63,17 +132,15 @@ h1 {
     margin-bottom: 40px;
 }
 
-.home-botoes {
-    display: flex;
-}
-
 .home-imagem {
     width: 500px;
+    max-width: 100%;
     border-radius: 20px;
 }
 
 /* ===== Produtos ===== */
-#produtos h2 {
+#produtos h2,
+#destaques h2 {
     font-size: 40px;
     text-align: center;
     margin-bottom: 50px;
@@ -88,6 +155,7 @@ h1 {
 }
 
 .produtos-item {
+    position: relative;
     background-color: #FFF;
     color: #191919;
     width: 300px;
@@ -110,4 +178,170 @@ h1 {
 
 .produtos-item p {
     font-size: 15px;
+}
+
+/* ===== Destaques ===== */
+.selo {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: #ff2bd6;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 30px;
+}
+
+.selo-verde {
+    background: #39ff14;
+    color: #0a0614;
+}
+
+.preco {
+    margin: 14px 0 18px;
+}
+
+.preco-antigo {
+    font-size: 14px;
+    color: #777;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.preco-atual {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a9e0a;
+}
+
+.botao-add {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ===== Chamada ===== */
+.cta {
+    background: linear-gradient(90deg, #ff2bd6 0%, #7b2cff 100%);
+    padding: 70px 0;
+}
+
+.cta-inner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 17px;
+}
+
+.cta .botao-contorno {
+    color: #FFF;
+    border-color: #FFF;
+}
+
+/* ===== Rodapé ===== */
+.footer {
+    background-color: #150a2e;
+    padding-top: 50px;
+}
+
+.footer-inner {
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 36px;
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.footer li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    list-style: none;
+    color: #c9bfe6;
+}
+
+.footer-base {
+    border-top: 1px solid #2a1a4f;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #9b90bd;
+}
+
+/* ===== Celular ===== */
+@media (max-width: 800px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background-color: #120a24;
+    }
+
+    .nav-links.aberto {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 16px 20px;
+    }
+
+    .header-inner {
+        position: relative;
+    }
+
+    .home-lista {
+        flex-direction: column;
+    }
+
+    .home-texto {
+        width: 100%;
+    }
+
+    .home-imagem {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .produtos-item {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .cta-inner,
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
 }
