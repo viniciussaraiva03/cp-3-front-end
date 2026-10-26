@@ -79,7 +79,7 @@
     cursor: pointer;
 }
 
-/* ===== Botões ===== */
+
 .botao {
     font-size: 15px;
     font-weight: 700;
@@ -102,7 +102,7 @@
     color: #00f0ff;
 }
 
-/* ===== Home ===== */
+
 .home-lista {
     display: flex;
     justify-content: space-evenly;
@@ -138,7 +138,7 @@ h1 {
     border-radius: 20px;
 }
 
-/* ===== Produtos ===== */
+
 #produtos h2,
 #destaques h2 {
     font-size: 40px;
@@ -180,7 +180,6 @@ h1 {
     font-size: 15px;
 }
 
-/* ===== Destaques ===== */
 .selo {
     position: absolute;
     top: 14px;
@@ -223,7 +222,6 @@ h1 {
     font-family: inherit;
 }
 
-/* ===== Chamada ===== */
 .cta {
     background: linear-gradient(90deg, #ff2bd6 0%, #7b2cff 100%);
     padding: 70px 0;
@@ -252,8 +250,6 @@ h1 {
     color: #FFF;
     border-color: #FFF;
 }
-
-/* ===== Rodapé ===== */
 .footer {
     background-color: #150a2e;
     padding-top: 50px;
@@ -289,7 +285,6 @@ h1 {
     color: #9b90bd;
 }
 
-/* ===== Celular ===== */
 @media (max-width: 800px) {
     .menu-toggle {
         display: block;
@@ -344,4 +339,40 @@ h1 {
         flex-direction: column;
         text-align: center;
     }
+
+    
+.produtos-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 43, 214, 0.3);
+}
+
+
+.botao-verde:hover {
+    background-color: #2bd60b;
+}
+
+.botao-contorno:hover {
+    background-color: #00f0ff;
+    color: #0a0614;
+}
+
+
+.nav-links a:hover {
+    color: #ff2bd6;
+}
+
+.produtos-item img {
+    border-radius: 10px;
+}
+
+.produtos-lista {
+    gap: 10px;
+}
+
+
+.carrinho:hover {
+    border-color: #ff2bd6;
+    color: #ff2bd6;
+}
+
 }
