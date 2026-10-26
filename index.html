@@ -8,16 +8,30 @@
 </head>
 <body>
 
+    <header class="header">
+        <div class="header-inner">
+            <a href="#home" class="header-logo">Katchau Games</a>
+
+            <button class="menu-toggle" id="botao-menu">☰</button>
+
+            <nav class="nav-links" id="menu">
+                <a href="#produtos">Produtos</a>
+                <a href="#destaques">Destaques</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <a href="#destaques" class="carrinho">Carrinho <span id="contador">0</span></a>
+        </div>
+    </header>
+
     <div id="home" class="container">
         <div class="home-lista">
             <div class="home-texto">
                 <h2 class="home-logo">Katchau Games</h2>
                 <h1>Teclado mecânico Katchau K87 RGB</h1>
                 <p>Switches rápidos, resposta de 1 ms e iluminação RGB. Mais precisão nas partidas e mais estilo no seu setup.</p>
-                <div class="home-botoes">
-                    <a href="#produtos" class="botao botao-verde">Compre agora</a>
-                    <a href="#produtos" class="botao botao-contorno">Ver periféricos</a>
-                </div>
+                <a href="#destaques" class="botao botao-verde">Compre agora</a>
+                <a href="#produtos" class="botao botao-contorno">Ver periféricos</a>
             </div>
             <img src="./images/setup.png" alt="Setup gamer" class="home-imagem">
         </div>
@@ -60,5 +74,74 @@
         </div>
     </div>
 
+    <div id="destaques" class="container">
+        <h2>Em destaque</h2>
+
+        <div class="produtos-lista">
+            <div class="produtos-item">
+                <span class="selo">Mais vendido</span>
+                <img src="./images/teclado.png" alt="Teclado Katchau K87 RGB">
+                <h3>Teclado Katchau K87 RGB</h3>
+                <p>Switches rápidos, layout compacto e iluminação RGB.</p>
+                <div class="preco">
+                    <span class="preco-antigo">R$ 349,90</span>
+                    <span class="preco-atual">R$ 289,90</span>
+                </div>
+                <button class="botao botao-verde botao-add">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produtos-item">
+                <span class="selo selo-verde">Novo</span>
+                <img src="./images/mouse.png" alt="Mouse Katchau Pro">
+                <h3>Mouse Katchau Pro</h3>
+                <p>Sensor preciso, botões programáveis e peso ajustável.</p>
+                <div class="preco">
+                    <span class="preco-atual">R$ 129,90</span>
+                </div>
+                <button class="botao botao-verde botao-add">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produtos-item">
+                <img src="./images/headset.png" alt="Headset Katchau Sound">
+                <h3>Headset Katchau Sound</h3>
+                <p>Áudio imersivo com microfone removível e almofadas macias.</p>
+                <div class="preco">
+                    <span class="preco-atual">R$ 199,90</span>
+                </div>
+                <button class="botao botao-verde botao-add">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta">
+        <div class="cta-inner">
+            <div>
+                <h2>Seu setup, do seu jeito</h2>
+                <p>Combine teclado, mouse, headset e mousepad com a iluminação que você quiser.</p>
+            </div>
+            <a href="#produtos" class="botao botao-contorno">Montar meu setup</a>
+        </div>
+    </section>
+
+    <footer class="footer" id="contato">
+        <div class="footer-inner">
+            <div>
+                <h4>Katchau Games</h4>
+                <p>Periféricos gamer com desempenho e estilo para o seu setup.</p>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <ul>
+                    <li>contato@katchaugames.com.br</li>
+                    <li>Seg. a sex., 9h às 18h</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-base">
+            <p>&copy; 2026 Katchau Games. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
